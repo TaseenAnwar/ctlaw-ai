@@ -1,1 +1,137 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
+.hero {
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 60px;
+}
+
+.logoContainer {
+  margin-bottom: 30px;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+
+.featureCard {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.featureIcon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.featureTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.featureDescription {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.ctaSection {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.loginButton {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.loginButton:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+.disclaimer {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+  max-width: 700px;
+  border-left: 4px solid #f39c12;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.disclaimer p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.disclaimer strong {
+  color: #e67e22;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+  }
+  
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
